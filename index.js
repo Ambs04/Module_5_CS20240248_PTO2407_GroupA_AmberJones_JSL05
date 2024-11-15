@@ -61,35 +61,37 @@ const guardians = {
 // Function to generate playlist based on preferred genre
 function generatePlaylist(guardians, songs) {
   //STAR-LORD PLAYLIST
-  let starLord = songs.filter((songs) => songs.genre === "Rock");
+  let starLord = songs.filter(
+    (songs) => songs.genre === guardians["Star-Lord"]
+  );
   const starLordPlaylist = starLord.map(
     (starLord) => [starLord.title] + " by " + [starLord.artist]
   );
   //console.log(starLordPlaylist);
 
   //GAMORA PLAYLIST
-  let gamora = songs.filter((songs) => songs.genre === "Pop");
+  let gamora = songs.filter((songs) => songs.genre === guardians["Gamora"]);
   const gamoraPlaylist = gamora.map(
     (gamora) => [gamora.title] + " by " + [gamora.artist]
   );
-  //console.log(gamoraPlaylist);
+  // console.log(gamoraPlaylist);
 
   //ROCKET PLAYLIST
-  let rocket = songs.filter((songs) => songs.genre === "Hip hop");
+  let rocket = songs.filter((songs) => songs.genre === guardians["Rocket"]);
   const rocketPlaylist = rocket.map(
     (rocket) => [rocket.title] + " by " + [rocket.artist]
   );
   //console.log(rocketPlaylist);
 
   //DRAX PLAYLIST
-  let drax = songs.filter((songs) => songs.genre === "Country Rock");
+  let drax = songs.filter((songs) => songs.genre === guardians["Drax"]);
   const draxPlaylist = drax.map(
     (drax) => [drax.title] + " by " + [drax.artist]
   );
   //console.log(draxPlaylist);
 
   //GROOT PLAYLIST
-  let groot = songs.filter((songs) => songs.genre === "Disco");
+  let groot = songs.filter((songs) => songs.genre === guardians["Groot"]);
   const grootPlaylist = groot.map(
     (groot) => [groot.title] + " by " + [groot.artist]
   );
