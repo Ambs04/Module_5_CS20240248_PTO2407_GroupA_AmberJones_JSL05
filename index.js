@@ -81,7 +81,16 @@ function generatePlaylist(guardians, songs) {
   );
   //console.log(rocketPlaylist);
 
-   
+//DRAX PLAYLIST
+let drax = songs.filter((songs) => songs.genre === "Country Rock");
+const draxPlaylist = drax.map(
+  (drax) => [drax.title] + " by " + [drax.artist]
+);
+//console.log(draxPlaylist);
+
+
+
+
 
 
 
