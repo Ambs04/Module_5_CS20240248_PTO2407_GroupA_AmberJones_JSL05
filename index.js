@@ -51,7 +51,7 @@ const songs = [
 
 // Object containing each Guardian's preferred genre
 const guardians = {
-  Star-Lord: "Rock",
+  "Star-Lord": "Rock",
   Gamora: "Pop",
   Rocket: "Hip hop",
   Drax: "Country Rock",
@@ -81,21 +81,19 @@ function generatePlaylist(guardians, songs) {
   );
   //console.log(rocketPlaylist);
 
-//DRAX PLAYLIST
-let drax = songs.filter((songs) => songs.genre === "Country Rock");
-const draxPlaylist = drax.map(
-  (drax) => [drax.title] + " by " + [drax.artist]
-);
-//console.log(draxPlaylist);
+  //DRAX PLAYLIST
+  let drax = songs.filter((songs) => songs.genre === "Country Rock");
+  const draxPlaylist = drax.map(
+    (drax) => [drax.title] + " by " + [drax.artist]
+  );
+  //console.log(draxPlaylist);
 
-
-
-
-
-
-
-
-
+  //GROOT PLAYLIST
+  let groot = songs.filter((songs) => songs.genre === "Disco");
+  const grootPlaylist = gamora.map(
+    (groot) => [groot.title] + " by " + [groot.artist]
+  );
+  //console.log(grootPlaylist);
 }
 
 // Call generatePlaylist and display the playlists for each Guardian
