@@ -93,7 +93,7 @@ function generatePlaylist(guardians, songs) {
   const grootPlaylist = groot.map(
     (groot) => [groot.title] + " by " + [groot.artist]
   );
-  console.log(grootPlaylist);
+  //console.log(grootPlaylist);
 }
 
 // Call generatePlaylist and display the playlists for each Guardian
