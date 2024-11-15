@@ -66,6 +66,13 @@ function generatePlaylist(guardians, songs) {
     (starLord) => [starLord.title] + " by " + [starLord.artist]
   );
   //console.log(starLordPlaylist);
+
+  //GAMORA PLAYLIST
+  let gamora = songs.filter((songs) => songs.genre === "Pop");
+  const gamoraPlaylist = gamora.map(
+    (gamora) => [gamora.title] + " by " + [gamora.artist]
+  );
+  //console.log(gamoraPlaylist);
 }
 
 // Call generatePlaylist and display the playlists for each Guardian
