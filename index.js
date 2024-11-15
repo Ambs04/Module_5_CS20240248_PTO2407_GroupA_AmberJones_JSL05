@@ -90,10 +90,10 @@ function generatePlaylist(guardians, songs) {
 
   //GROOT PLAYLIST
   let groot = songs.filter((songs) => songs.genre === "Disco");
-  const grootPlaylist = gamora.map(
+  const grootPlaylist = groot.map(
     (groot) => [groot.title] + " by " + [groot.artist]
   );
-  //console.log(grootPlaylist);
+  console.log(grootPlaylist);
 }
 
 // Call generatePlaylist and display the playlists for each Guardian
