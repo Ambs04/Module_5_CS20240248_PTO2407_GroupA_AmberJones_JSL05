@@ -1,4 +1,4 @@
-// Array of song objects. Add at least 5 songs with title, artist, and genre properties.
+d; // Array of song objects. Add at least 5 songs with title, artist, and genre properties.
 const songs = [
   { title: "Hooked on a Feeling", artist: "Blue Swede", genre: "Pop" },
   { title: "Moonage Daydream", artist: "David Bowie", genre: "Rock" },
@@ -68,8 +68,8 @@ function generatePlaylist(guardians, songs) {
     (starLord) =>
       `<div class = "song"><span class = "song-title" class = "song-title:hover">${starLord.artist}</span></div>`
   );
-
-  //console.log(starLordPlaylist);
+  let starLordSongs = starLordPlaylist.join("");
+  starLordPlaylist.innerHTML += `<div class="playlist><div><>Star-Lord's Playlist:</b></div>${starLordSongs}</div>`;
 
   //GAMORA PLAYLIST
   let gamora = songs.filter((songs) => songs.genre === guardians["Gamora"]);
