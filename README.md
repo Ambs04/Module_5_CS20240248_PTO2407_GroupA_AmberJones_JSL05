@@ -1,6 +1,7 @@
 # [JSL05] Submission: Galaxy Playlist Generator
 
 You will:
+
 1. Use the provided Starter Code Repository: https://github.com/CodeSpace-Academy/Module_5_StudentNo_Classcode_Group_Name-Surname_JSL05
 2. Code your solution.
 3. Commit changes to your GitHub repository.
@@ -44,9 +45,6 @@ In this challenge, you'll combine your knowledge of JavaScript arrays and the `m
 
 This challenge will test your ability to manipulate arrays and objects, use the `map()` function for data transformation, and dynamically update the DOM based on data. Good luck, and may your mix be truly awesome!
 
+## FIND MY EXPLANATION VIDEO BELOW:
 
-
-
-
-
-
+https://drive.google.com/file/d/1jMGTHi1v8uwM22xC3qp4umLmV5jEpf7N/view?usp=drive_link
