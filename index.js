@@ -69,7 +69,7 @@ function generatePlaylist(guardians, songs) {
       `<div class = "song"><span class = "song-title" class = "song-title:hover">${starLord.artist}</span></div>`
   );
   let starLordSongs = starLordPlaylist.join("");
-  starLordPlaylist.innerHTML += `<div class="playlist><div><>Star-Lord's Playlist:</b></div>${starLordSongs}</div>`;
+  starLordPlaylist.innerHTML += `<div class="playlist><div style=font-size: 26px;><b>Star-Lord's Playlist:</b></div>${starLordSongs}</div>`;
 
   //GAMORA PLAYLIST
   let gamora = songs.filter((songs) => songs.genre === guardians["Gamora"]);
