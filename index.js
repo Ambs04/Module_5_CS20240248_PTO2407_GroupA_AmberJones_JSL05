@@ -66,7 +66,7 @@ function generatePlaylist(guardians, songs) {
   );
   const starLordPlaylist = starLord.map(
     (starLord) =>
-      `<div class = "song"><span class = "song-title" class = "song-title:hover">${starLord.artist}</span></div>`
+      `<div class = "song"><span class = "song-title" class = "song-title:hover">${starLord.title}</span> by ${starLord.artist}</div>`
   );
   let starLordSongs = starLordPlaylist.join("");
   starLordPlaylist.innerHTML += `<div class="playlist><div style=font-size: 26px;><b>Star-Lord's Playlist:</b></div>${starLordSongs}</div>`;
@@ -74,28 +74,32 @@ function generatePlaylist(guardians, songs) {
   //GAMORA PLAYLIST
   let gamora = songs.filter((songs) => songs.genre === guardians["Gamora"]);
   const gamoraPlaylist = gamora.map(
-    (gamora) => [gamora.title] + " by " + [gamora.artist]
+    (gamora) =>
+      `<div class = "song"><span class = "song-title" class = "song-title:hover">${gamora.title}</span> by ${gamora.artist}</div>`
   );
   // console.log(gamoraPlaylist);
 
   //ROCKET PLAYLIST
   let rocket = songs.filter((songs) => songs.genre === guardians["Rocket"]);
   const rocketPlaylist = rocket.map(
-    (rocket) => [rocket.title] + " by " + [rocket.artist]
+    (rocket) =>
+      `<div class = "song"><span class = "song-title" class = "song-title:hover">${rocket.title}</span> by ${rocket.artist}</div>`
   );
   //console.log(rocketPlaylist);
 
   //DRAX PLAYLIST
   let drax = songs.filter((songs) => songs.genre === guardians["Drax"]);
   const draxPlaylist = drax.map(
-    (drax) => [drax.title] + " by " + [drax.artist]
+    (drax) =>
+      `<div class = "song"><span class = "song-title" class = "song-title:hover">${drax.title}</span> by ${drax.artist}</div>`
   );
   //console.log(draxPlaylist);
 
   //GROOT PLAYLIST
   let groot = songs.filter((songs) => songs.genre === guardians["Groot"]);
   const grootPlaylist = groot.map(
-    (groot) => [groot.title] + " by " + [groot.artist]
+    (groot) =>
+      `<div class = "song"><span class = "song-title" class = "song-title:hover">${groot.title}</span> by ${groot.artist}</div>`
   );
   //console.log(grootPlaylist);
 }
