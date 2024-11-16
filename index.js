@@ -104,7 +104,8 @@ function generatePlaylist(guardians, songs) {
     (groot) =>
       `<div class = "song"><span class = "song-title" class = "song-title:hover">${groot.title}</span> by ${groot.artist}</div>`
   );
-  //console.log(grootPlaylist);
+  let grootSongs = grootPlaylist.join("");
+  grootPlaylist.innerHTML += `<div class="playlist><div style=font-size: 26px;><b>Groot's Playlist:</b></div>${grootSongs}</div>`;
 }
 
 // Call generatePlaylist and display the playlists for each Guardian
