@@ -65,8 +65,10 @@ function generatePlaylist(guardians, songs) {
     (songs) => songs.genre === guardians["Star-Lord"]
   );
   const starLordPlaylist = starLord.map(
-    (starLord) => [starLord.title] + " by " + [starLord.artist]
+    (starLord) =>
+      `<div class = "song"><span class = "song-title" class = "song-title:hover">${starLord.artist}</span></div>`
   );
+
   //console.log(starLordPlaylist);
 
   //GAMORA PLAYLIST
