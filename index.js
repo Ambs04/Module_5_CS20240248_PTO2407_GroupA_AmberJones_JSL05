@@ -71,7 +71,7 @@ function generatePlaylist(guardians, songs) {
       `<div class = "song"><span class = "song-title" class = "song-title:hover">${starLord.title}</span> by ${starLord.artist}</div>`
   );
   let starLordSongs = starLordPlaylist.join("");
-  starLordPlaylist.innerHTML += `<div class="playlist><div style=font-size: 26px;><b>Star-Lord's Playlist:</b></div>${starLordSongs}</div>`;
+  playlist.innerHTML += `<div class="playlist><div style=font-size: 26px;><b>Star-Lord's Playlist:</b></div>${starLordSongs}</div>`;
 
   //GAMORA PLAYLIST
   let gamora = songs.filter((songs) => songs.genre === guardians["Gamora"]);
@@ -80,7 +80,7 @@ function generatePlaylist(guardians, songs) {
       `<div class = "song"><span class = "song-title" class = "song-title:hover">${gamora.title}</span> by ${gamora.artist}</div>`
   );
   let gamoraSongs = gamoraPlaylist.join("");
-  gamoraPlaylist.innerHTML += `<div class="playlist><div style=font-size: 26px;><b>Gamora's Playlist:</b></div>${gamoraSongs}</div>`;
+  playlist.innerHTML += `<div class="playlist><div style=font-size: 26px;><b>Gamora's Playlist:</b></div>${gamoraSongs}</div>`;
 
   //ROCKET PLAYLIST
   let rocket = songs.filter((songs) => songs.genre === guardians["Rocket"]);
@@ -89,7 +89,7 @@ function generatePlaylist(guardians, songs) {
       `<div class = "song"><span class = "song-title" class = "song-title:hover">${rocket.title}</span> by ${rocket.artist}</div>`
   );
   let rocketSongs = rocketPlaylist.join("");
-  rocketPlaylist.innerHTML += `<div class="playlist><div style=font-size: 26px;><b>Rocket's Playlist:</b></div>${rocketSongs}</div>`;
+  playlist.innerHTML += `<div class="playlist><div style=font-size: 26px;><b>Rocket's Playlist:</b></div>${rocketSongs}</div>`;
 
   //DRAX PLAYLIST
   let drax = songs.filter((songs) => songs.genre === guardians["Drax"]);
@@ -98,7 +98,7 @@ function generatePlaylist(guardians, songs) {
       `<div class = "song"><span class = "song-title" class = "song-title:hover">${drax.title}</span> by ${drax.artist}</div>`
   );
   let draxSongs = draxPlaylist.join("");
-  draxPlaylist.innerHTML += `<div class="playlist><div style=font-size: 26px;><b>Drax's Playlist:</b></div>${draxSongs}</div>`;
+  playlist.innerHTML += `<div class="playlist><div style=font-size: 26px;><b>Drax's Playlist:</b></div>${draxSongs}</div>`;
 
   //GROOT PLAYLIST
   let groot = songs.filter((songs) => songs.genre === guardians["Groot"]);
@@ -107,7 +107,7 @@ function generatePlaylist(guardians, songs) {
       `<div class = "song"><span class = "song-title" class = "song-title:hover">${groot.title}</span> by ${groot.artist}</div>`
   );
   let grootSongs = grootPlaylist.join("");
-  grootPlaylist.innerHTML += `<div class="playlist><div style=font-size: 26px;><b>Groot's Playlist:</b></div>${grootSongs}</div>`;
+  playlist.innerHTML += `<div class="playlist><div style=font-size: 26px;><b>Groot's Playlist:</b></div>${grootSongs}</div>`;
 }
 
 // Call generatePlaylist and display the playlists for each Guardian
