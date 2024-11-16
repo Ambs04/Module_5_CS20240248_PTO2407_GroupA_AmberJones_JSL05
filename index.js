@@ -60,6 +60,8 @@ const guardians = {
 
 // Function to generate playlist based on preferred genre
 function generatePlaylist(guardians, songs) {
+  let playlist = document.getElementById("playlists");
+
   //STAR-LORD PLAYLIST
   let starLord = songs.filter(
     (songs) => songs.genre === guardians["Star-Lord"]
