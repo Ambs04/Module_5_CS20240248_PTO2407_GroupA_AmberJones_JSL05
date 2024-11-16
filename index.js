@@ -95,7 +95,8 @@ function generatePlaylist(guardians, songs) {
     (drax) =>
       `<div class = "song"><span class = "song-title" class = "song-title:hover">${drax.title}</span> by ${drax.artist}</div>`
   );
-  //console.log(draxPlaylist);
+  let draxSongs = draxPlaylist.join("");
+  draxPlaylist.innerHTML += `<div class="playlist><div style=font-size: 26px;><b>Drax's Playlist:</b></div>${draxSongs}</div>`;
 
   //GROOT PLAYLIST
   let groot = songs.filter((songs) => songs.genre === guardians["Groot"]);
