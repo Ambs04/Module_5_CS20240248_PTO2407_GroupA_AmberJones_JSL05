@@ -77,7 +77,8 @@ function generatePlaylist(guardians, songs) {
     (gamora) =>
       `<div class = "song"><span class = "song-title" class = "song-title:hover">${gamora.title}</span> by ${gamora.artist}</div>`
   );
-  // console.log(gamoraPlaylist);
+  let gamoraSongs = gamoraPlaylist.join("");
+  gamoraPlaylist.innerHTML += `<div class="playlist><div style=font-size: 26px;><b>Star-Lord's Playlist:</b></div>${gamoraSongs}</div>`;
 
   //ROCKET PLAYLIST
   let rocket = songs.filter((songs) => songs.genre === guardians["Rocket"]);
